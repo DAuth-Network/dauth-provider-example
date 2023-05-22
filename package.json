@@ -10,9 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@dauth/dauth-provider": "^0.0.6",
+    "@dauth/core": "^0.0.2",
+    "@dauth/dauth-provider": "^0.0.9",
+    "@lit-protocol/lit-node-client": "^2.1.161",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-json-view": "^1.21.3",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
