@@ -1,8 +1,8 @@
-# dauth-provider-example
+# dauth-sdk-example
 
 1. clone this repo.
-2. cd dauth-provider-example
-3. npm install
-4. npm run dev
+2. cd dauth-sdk-example
+3. yarn
+4. yarn dev
  
 
