@@ -2,14 +2,17 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@dauth/core':
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.1.1
+    version: 0.1.1
   '@dauth/dauth-provider':
     specifier: ^0.0.9
     version: 0.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(vite@4.3.2)
   '@lit-protocol/lit-node-client':
     specifier: ^2.1.161
     version: 2.1.161(@ethersproject/contracts@5.7.0)(@ethersproject/hash@5.7.0)(@ethersproject/providers@5.7.2)(@ethersproject/wallet@5.7.0)(react@18.2.0)
+  '@react-oauth/google':
+    specifier: ^0.11.0
+    version: 0.11.0(react-dom@18.2.0)(react@18.2.0)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
@@ -19,6 +22,9 @@ dependencies:
   react:
     specifier: ^18.2.0
     version: 18.2.0
+  react-apple-login:
+    specifier: ^1.1.6
+    version: 1.1.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
@@ -426,8 +432,8 @@ packages:
     resolution: {integrity: sha512-KvvX58MGMWh7xA+N+deCfunkA/ZNDvFLw4YbOmX3f/XBIkqrVY7qlotfy2aNb1kgp6h4B6Yc8YawJPDTfvWX7g==}
     dev: false
 
-  /@dauth/core@0.0.2:
-    resolution: {integrity: sha512-81z3qMbhP/402/Z0ujHAsTg82QFlWHGdIXSgg+vhjj+MPYHydoz/R6H61GVIA9T67XKZz89T5tu0ffzbkTVn7w==}
+  /@dauth/core@0.1.1:
+    resolution: {integrity: sha512-OdVL/oyGi4LsoV10zgwGxd+BC2gdOsgVEzNAA1cOVzct6aWr5LQbBMCI484lveSJ/EHeLIJVg3tM5WymMpAmaw==}
     dependencies:
       '@tsconfig/esm': 1.0.3
       '@tsconfig/recommended': 1.0.2
@@ -4510,6 +4516,14 @@ packages:
       asap: 2.0.6
     dev: false
 
+  /prop-types@15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /protobufjs@6.11.3:
     resolution: {integrity: sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==}
     hasBin: true
@@ -4623,6 +4637,19 @@ packages:
       - supports-color
     dev: false
 
+  /react-apple-login@1.1.6(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ySV6ax0aB+ksA7lKzhr4MvsgjwSH068VtdHJXS+7rL380IJnNQNl14SszR31k3UqB8q8C1H1oyjJFGq4MyO6tw==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      prop-types: ^15.5.4
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /react-auth-code-input@3.2.1(react@18.2.0):
     resolution: {integrity: sha512-oWWKbxDLU5g46gvE1DIvNFHsDx37JSAfB6WX8luG6TWZB3iDfKMjQnhUgb+0imL/6ykGVMqdZ426tQW1uj25kg==}
     engines: {node: '>=10'}
@@ -4657,6 +4684,10 @@ packages:
       react: '*'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /react-is@16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-json-view@1.21.3(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0):
