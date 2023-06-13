@@ -68,12 +68,29 @@ function App() {
       console.log(error)
     }
   }
+
   const authGoogleOAuth = async (token: string) => {
     try {
       const res = await dauth.service.authOauth({
         token,
         request_id: 'test',
         auth_type: 'google',
+        mode
+      })
+      console.log(res)
+      setRes(res)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const authAppleOAuth = async (response: any) => {
+    const code = response.code
+    try {
+      const res = await dauth.service.authOauth({
+        token: code,
+        request_id: 'test',
+        auth_type: 'apple' as any,
         mode
       })
       console.log(res)
@@ -149,7 +166,13 @@ function App() {
             <div className="text-xl py-4">
               Apple signin  example
             </div>
-            <AppleLogin clientId="com.dauth.oauth" redirectURI="https://demo.dauth.network/redirect" />
+            <AppleLogin
+              callback={authAppleOAuth}
+              clientId="com.duath.network.oauth"
+              scope="email name"
+              responseMode="query"
+              responseType="code"
+              redirectURI="https://demo-api.dauth.network/" />
           </div>
         </div>
 
