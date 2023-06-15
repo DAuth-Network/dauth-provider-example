@@ -6,8 +6,9 @@ import DAuth from "@dauth/core";
 import { useState } from "react";
 import { IOtpConfirmReturn, TSign_mode } from "@dauth/core/dist/types";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import AppleLogin from 'react-apple-login'
+import AppleSignin from 'react-apple-signin-auth';
 import GoogleLoginCom from "./components/GoogleLogin";
+import AppleLogin from "react-apple-login";
 
 const dauth = new DAuth({
   baseURL: 'https://demo-api.dauth.network/dauth/sdk/v1.1/',
@@ -169,7 +170,7 @@ function App() {
             <AppleLogin
               callback={authAppleOAuth}
               clientId="com.duath.network.oauth"
-              scope="email name"
+              scope="email"
               responseMode="query"
               responseType="code"
               redirectURI="https://demo-api.dauth.network/" />
