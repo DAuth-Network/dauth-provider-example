@@ -6,12 +6,11 @@ import DAuth from "@dauth/core";
 import { useState } from "react";
 import { IOtpConfirmReturn, TSign_mode } from "@dauth/core/dist/types";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import AppleSignin from 'react-apple-signin-auth';
 import GoogleLoginCom from "./components/GoogleLogin";
 import AppleLogin from "react-apple-login";
 
 const dauth = new DAuth({
-  baseURL: 'https://demo-api.dauth.network/dauth/sdk/v1.1/',
+  baseURL: 'https://dev-api.dauth.network/dauth/sdk/v1.1/',
   clientID: 'demo',
 })
 function App() {
@@ -48,7 +47,8 @@ function App() {
       const res = await dauth.service.authOptConfirm({
         code: emailOtp,
         request_id: 'test',
-        mode: mode
+        mode: mode,
+        auth_type: 'email'
       })
       console.log(res)
       setRes(res)
@@ -61,7 +61,8 @@ function App() {
       const res = await dauth.service.authOptConfirm({
         code: smsOtp,
         request_id: 'test',
-        mode
+        mode,
+        auth_type: 'sms'
       })
       console.log(res)
       setRes(res)
@@ -91,7 +92,7 @@ function App() {
       const res = await dauth.service.authOauth({
         token: code,
         request_id: 'test',
-        auth_type: 'apple' as any,
+        auth_type: 'apple',
         mode
       })
       console.log(res)
@@ -173,11 +174,10 @@ function App() {
               scope="email"
               responseMode="query"
               responseType="code"
+              
               redirectURI="https://demo-api.dauth.network/" />
           </div>
         </div>
-
-
         <div className="p-10 w-3/5">
           {res && <ReactJson displayDataTypes={false} quotesOnKeys={false} name={null} collapseStringsAfterLength={128} indentWidth={2} src={res!} />}
         </div>

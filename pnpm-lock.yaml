@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@dauth/core':
-    specifier: ^0.1.1
-    version: 0.1.1
+    specifier: ^0.1.3
+    version: 0.1.3
   '@dauth/dauth-provider':
     specifier: ^0.0.9
     version: 0.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(vite@4.3.2)
@@ -13,6 +13,9 @@ dependencies:
   '@react-oauth/google':
     specifier: ^0.11.0
     version: 0.11.0(react-dom@18.2.0)(react@18.2.0)
+  ahooks:
+    specifier: ^3.7.8
+    version: 3.7.8(react@18.2.0)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
@@ -435,8 +438,8 @@ packages:
     resolution: {integrity: sha512-KvvX58MGMWh7xA+N+deCfunkA/ZNDvFLw4YbOmX3f/XBIkqrVY7qlotfy2aNb1kgp6h4B6Yc8YawJPDTfvWX7g==}
     dev: false
 
-  /@dauth/core@0.1.1:
-    resolution: {integrity: sha512-OdVL/oyGi4LsoV10zgwGxd+BC2gdOsgVEzNAA1cOVzct6aWr5LQbBMCI484lveSJ/EHeLIJVg3tM5WymMpAmaw==}
+  /@dauth/core@0.1.3:
+    resolution: {integrity: sha512-3onbNuZxZU+men8kHI+Dra4XZJqELWsRuA7nrJBPAAve3FW7c7MI0zlNALiBHaPM9RW0KQyVvqGIlegx1zYCIw==}
     dependencies:
       '@tsconfig/esm': 1.0.3
       '@tsconfig/recommended': 1.0.2
@@ -459,7 +462,7 @@ packages:
       '@rollup/plugin-typescript': 11.1.1(tslib@2.5.0)(typescript@5.0.2)
       '@types/elliptic': 6.4.14
       '@types/node': 20.1.5
-      ahooks: 3.7.7(react@18.2.0)
+      ahooks: 3.7.8(react@18.2.0)
       axios: 1.4.0
       elliptic: 6.5.4
       node-forge: 1.3.1
@@ -2335,8 +2338,8 @@ packages:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
     dev: false
 
-  /ahooks@3.7.7(react@18.2.0):
-    resolution: {integrity: sha512-5e5WlPq81Y84UnTLOKIQeq2cJw4aa7yj8fR2Nb/oMmXPrWMjIMCbPS1o+fpxSfCaNA3AzOnnMc8AehWRZltkJQ==}
+  /ahooks@3.7.8(react@18.2.0):
+    resolution: {integrity: sha512-e/NMlQWoCjaUtncNFIZk3FG1ImSkV/JhScQSkTqnftakRwdfZWSw6zzoWSG9OMYqPNs2MguDYBUFFC6THelWXA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
