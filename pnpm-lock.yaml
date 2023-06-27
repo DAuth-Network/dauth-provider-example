@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@dauth/core':
-    specifier: ^0.1.3
-    version: 0.1.3
+    specifier: ^0.1.4
+    version: 0.1.4
   '@dauth/dauth-provider':
     specifier: ^0.0.9
     version: 0.0.9(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(vite@4.3.2)
@@ -441,8 +441,8 @@ packages:
     resolution: {integrity: sha512-KvvX58MGMWh7xA+N+deCfunkA/ZNDvFLw4YbOmX3f/XBIkqrVY7qlotfy2aNb1kgp6h4B6Yc8YawJPDTfvWX7g==}
     dev: false
 
-  /@dauth/core@0.1.3:
-    resolution: {integrity: sha512-3onbNuZxZU+men8kHI+Dra4XZJqELWsRuA7nrJBPAAve3FW7c7MI0zlNALiBHaPM9RW0KQyVvqGIlegx1zYCIw==}
+  /@dauth/core@0.1.4:
+    resolution: {integrity: sha512-A/q7NUsQkU3kSuRBOWLBmC5OQE0eDq+JVjI4PPFk6hS3GlVwFaI+j1Ea5IUtpTg4/DaCIcaPGXRtpGaOurAmLw==}
     dependencies:
       '@tsconfig/esm': 1.0.3
       '@tsconfig/recommended': 1.0.2
